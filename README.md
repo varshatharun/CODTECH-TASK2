@@ -2,7 +2,7 @@
 **company:** CODTECH IT SOLUTIONS<br>
 **ID:** CT08ERP <br>
 **Domain:** Java Programming<br>
-**Duration:** Dec 17th 2024 to Jan 17th 2025<br>
+**Duration:** 17 Dec 2024 to 17 Jan 2025<br>
 ## OVERVIEW OF PROJECT
 
 ### Project: Simple Calculator
