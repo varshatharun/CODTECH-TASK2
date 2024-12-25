@@ -1,61 +1,47 @@
-// Java program for simple calculator
-import java.io.*;
-import java.lang.*;
-import java.lang.Math;
+package calci;
 import java.util.Scanner;
 
-// Driver class
-public class BasicCalculator {
-	// main function
-	public static void main(String[] args)
-	{
-		// Stores two numbers
-		double num1, num2;
+class Calculate{
+	 public static void main(String []args) {
 
-		// Take input from the user
-		Scanner sc = new Scanner(System.in);
+// initialisation of variables
+		int n_1,n_2, operation;
 
-		System.out.println("Enter the numbers:");
+		System.out.println("Enter two numbers");
+// user input of two numbers
+		Scanner sc= new Scanner(System.in);
+		n_1=sc.nextInt();
+		n_2=sc.nextInt();
+// operation to be performed
+		System.out.println("Enter the operation");
+		operation=sc.nextInt();
 
-		// Take the inputs
-		num1 = sc.nextDouble();
-		num2 = sc.nextDouble();
-
-		System.out.println("Enter the operator (+,-,*,/):");
-
-		char op = sc.next().charAt(0);
-		double o = 0;
-
-		switch (op) {
-		// case to add two numbers
-		case '+':
-			o = num1 + num2;
+// switch case
+		switch(operation) {
+		case 1: 
+			int add=n_1+n_2;
+			System.out.println(add);
 			break;
-
-		// case to subtract two numbers
-		case '-':
-			o = num1 - num2;
+		case 2:
+			int substract=n_1-n_2;
+			System.out.println(substract);
 			break;
-
-		// case to multiply two numbers
-		case '*':
-			o = num1 * num2;
+		case 3: 
+			int multiply=n_1*n_2;
+			System.out.println(multiply);
 			break;
-
-		// case to divide two numbers
-		case '/':
-			o = num1 / num2;
-			break;
-
-		default:
-			System.out.println("You enter wrong input");
+		case 4:
+			if(n_2==0) {
+				System.out.println("undefined");
+			}
+			else {
+			int divide=n_1/n_2;
+			System.out.println(divide);
+			}
+			break;	
+		default: 
+			System.out.println("Invalid Input");
 		}
-
-		System.out.println("The final result:");
-		System.out.println();
-
-		// print the final result
-		System.out.println(num1 + " " + op + " " + num2
-						+ " = " + o);
-	}
+		
+	 }
 }
